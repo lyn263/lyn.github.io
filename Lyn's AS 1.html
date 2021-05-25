@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+		const nextList = document.getElementById('next')
+		new URLSearchParams(window.location.search).forEach((value,name)=> 
+		{
+			nextList.append(`${name}: ${value}`)
+			nextList.append(document.createElement('br'))
+		})
+	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="with=device-width,initial-scale=1.0">
+	<title>Lyn's Favourite Food</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href=
+	"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	
+	<section class="header">
+	
+	<div id="next"></div>
+	<nav>
+		
+	<div class="box">
+	<ul>
+		<li class="active"><a href="Lyn's AS 1.html"><i class="fa fa-home"></i>Home</a></li>
+		<li class=""><a href="Menu WHY AS 1.html"><i class="fa fa-bars"></i>Menu</a>
+			<div class="submenu-1">
+				<ul>
+					<li><a href="Menu WHY AS 1.html">Why</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class=""><a href="Method AS 1.html">Method</a></li>
+		<li class=""><a href="Me.html"><i class="fa fa-user"></i>About</a></li>
+		<li class=""><a href="Feedback AS 1.html"><i class="fa fa-comments"></i>Feedback</a></li>
+		<li class=""><a href="Contact AS 1.html"><i class="fa fa-map"></i>Contact</a></li>
+	</ul>
+	
+<div class="t-box">
+	<h1>Welcome to Lyn's Food</h1>
+	<p>Welcome to Lyn's Webpage, there will be explanation about my favourite food, <br>how to make it, and about me.
+	</p>
+</section>
+	
+	<section class="menu">
+	<h1>Why should choose me</h1>
+	<img src="Back 3.jpg" style="width:50%; height:50%; text-align: center;">
+	<hr><a href="Menu WHY AS 1.html" class="ex-btn red-btn" style="margin-top:40px">Visit to know more</a></hr>
+</section>
+
+<!--call--->
+	<section class="pic">
+	<h1>Cook With us<br>Anywhere From The World</h1>
+	<a href="" class="ex-btn" style="margin-top:5%">CONTACT US</a>
+	</section>
+	
+<!--bio--->
+	
+	<section class="bio">
+	<h4><hr>About</hr></h4>
+	<p>Hi, let us learn more about my favourite food and about me. I hope you will enjoy it</p>
+	<div class="icon">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-instagram"></i>
+	</div>
+	<p>Made by --nurintanadlyna@gmail.com</p>
+</section>
+</div>
+</body>
+</html>

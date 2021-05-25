@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+		const nextList = document.getElementById('next')
+		new URLSearchParams(window.location.search).forEach((value,name)=> 
+		{
+			nextList.append(`${name}: ${value}`)
+			nextList.append(document.createElement('br'))
+		})
+	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="with=device-width,initial-scale=1.0">
+	<title>Lyn's Favourite Food</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href=
+	"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="sub-header3">
+	<div id="next"></div>
+	<div class="box">
+	<ul>
+		<li class=""><a href="Lyn's AS 1.html"><i class="fa fa-home"></i>Home</a></li>
+		<li class=""><a href="Menu WHY AS 1.html"><i class="fa fa-bars"></i>Menu</a>
+			<div class="submenu-1">
+				<ul>
+					<li><a href="Menu WHY AS 1.html">Why</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class=""><a href="Method AS 1.html">Method</a></li>
+		<li class="active"><a href="Me.html"><i class="fa fa-user"></i>About</a></li>
+		<li class=""><a href="Feedback AS 1.html"><i class="fa fa-comments"></i>Feedback</a></li>
+		<li class=""><a href="Contact AS 1.html"><i class="fa fa-map"></i>Contact</a></li>
+	</ul>
+	
+	
+	<!---ABOUT CONTENT---->
+	
+	<div class="rectangle">
+		<h3>NUR INTAN AD'LYNA BINTI MUHAMAD RASHID</h3>
+		<p style="margin-top:30px">Intan love cooking, so food are her bestfriend and life. To her,
+		eat<br>	are good for life. Porridge are one of her favourite food because <br>
+		it easy to make it and served. Porridge is one of the foods <br>
+		that is easily modified and can be eaten with 
+		anything <br>related so as to add more appetite.</p>
+		
+		<a href="https://www.facebook.com/nurintan.adlyna"><i class="fa fa-facebook-square" style="margin-top:20px; margin-right:1%"></i></a>
+		<a href="https://www.youtube.com/"><i class="fa fa-youtube-square" style="margin-top:20px; "></i></a>
+		<a href="http://www.myhealth.gov.my/piramid-makanan-malaysia/"><i class="fa fa-medkit" style="margin-top:20px; margin-right:40%"></i></a>
+		
+	</div>
+	
+	
+	<div class="comment">
+	
+		<h3>Leave a comment</h3>
+		
+		<form class="com-form"; action="results AS 1.html" method="GET" enctype="multipart/form-data">
+			<input type="text" placeholder="Enter Name">
+			<input type="email" placeholder="Email">
+			<textarea rows="5" placeholder="Your comment"></textarea>
+			<button type="submit" class="ex-btn red-btn">POST COMMENT</button>
+		</form>
+	</div>
+
+</form>
+</section>
+</div>
+</body>
+</html>

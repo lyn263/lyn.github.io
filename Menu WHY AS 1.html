@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+		const nextList = document.getElementById('next')
+		new URLSearchParams(window.location.search).forEach((value,name)=> 
+		{
+			nextList.append(`${name}: ${value}`)
+			nextList.append(document.createElement('br'))
+		})
+	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="with=device-width,initial-scale=1.0">
+	<title>Lyn's Favourite Food</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href=
+	"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	
+	<section class="sub-header1">
+	<div id="next"></div>
+	<div class="box">
+	<ul>
+		<li class=""><a href="Lyn's AS 1.html"><i class="fa fa-home"></i>Home</a></li>
+		<li class="active"><a href="Menu WHY AS 1.html"><i class="fa fa-bars"></i>Menu</a>
+			<div class="submenu-1">
+				<ul>
+					<li><a href="Menu WHY AS 1.html">Why</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class=""><a href="Method AS 1.html">Method</a></li>
+		<li class=""><a href="Me.html"><i class="fa fa-user"></i>About</a></li>
+		<li class=""><a href="Feedback AS 1.html"><i class="fa fa-comments"></i>Feedback</a></li>
+		<li class=""><a href="Contact AS 1.html"><i class="fa fa-map"></i>Contact</a></li>
+	</ul>
+	
+	
+	<!---WHY CONTENT---->
+	
+	<h1 style="margin-top:100px; margin-right:40% ;font-size:50px;color:burlywood;font-size:90px;">WHY?</h1>
+
+	
+	<section class="submenu-2">
+	<div class="row">
+		<div class="why">
+			<h1>Reason<h1>
+			<p>Porridge is one of the foods that will do good.<br> It is because,
+			porridge is always a priority when in the hospital that is feeding the patients. And it becomes a priority when a person falls ill especially toothache due to reduced appetite.
+			Porridge is also suitable for children to eat, especially the encouragement to give rice porridge to children as early as 6 months old, for example <a href="https://my.theasianparent.com/bubur-nasi-bayi-6-bulan">here.</a>
+			Rice porridge is on level 1 in the food pyramid. This shows that rice porridge is a good food because it gives energy.
+			Rice porridge has become my top priority in food favorites because rice porridge is easy to cook and serve. Rice porridge is also like oats or cereals for those who take care of the body.  </p>
+			<h3>Looking for porridge recipes?</h3>
+			<a href="Method AS 1.html" class="ex-btn red-btn">LET'S COOK</a>
+		</div>
+		<div class="why">
+			<img src="BUBUR Nasi.jpg"></img>
+		</div>
+
+</section>
+</body>
+</html>

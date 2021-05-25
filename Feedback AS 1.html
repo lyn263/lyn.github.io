@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+		const nextList = document.getElementById('next')
+		new URLSearchParams(window.location.search).forEach((value,name)=> 
+		{
+			nextList.append(`${name}: ${value}`)
+			nextList.append(document.createElement('br'))
+		})
+	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="with=device-width,initial-scale=1.0">
+	<title>Lyn's Favourite Food</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href=
+	"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<form action="results AS 1.html" method="GET" enctype="multipart/form-data">
+	<section class="sub-header4">
+	
+	<div id="next"></div>
+	<div class="box">
+	<ul>
+		<li class=""><a href="Lyn's AS 1.html"><i class="fa fa-home"></i>Home</a></li>
+		<li class=""><a href="Menu WHY AS 1.html"><i class="fa fa-bars"></i>Menu</a>
+			<div class="submenu-1">
+				<ul>
+					<li><a href="Menu WHY AS 1.html">Why</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class=""><a href="Method AS 1.html">Method</a></li>
+		<li class=""><a href="Me.html"><i class="fa fa-user"></i>About</a></li>
+		<li class=""><a href="Feedback AS 1.html"><i class="fa fa-comments"></i>Feedback</a></li>
+		<li class=""><a href="Contact AS 1.html"><i class="fa fa-map"></i>Contact</a></li>
+	</ul>
+	
+
+	<section class="f" style="color:black; text-align:left">
+	<div>
+		<label for="name">Name</label>
+		<input type="text" name="name" id="name" required>
+	</div>
+	<div>
+		<label for="email">Email</label>
+		<input type="email" name="email" id="email" required>
+	</div>
+	<div>
+		<label for="age">Age</label>
+		<style="margin-right:-50px">
+		<input type="number" name="age" id="age" min="1" max="150" step="1" >
+	</div>
+	<div>
+		<label for="phone">Phone Number</label>
+		<input type="tel" name="phone" id="phone">
+	</div>
+	<div>
+		<label for="s">What were you looking for and did you find it?</label>
+		<br>
+		<textarea id="s" name="s"></textarea>
+	</div>
+	<div>
+		<label for="file">File</label>
+		<input id="file" type="file" name="file">
+	</div>
+	<label for="gender">Gender:</label>
+			<select name="gender" id="gender">
+			<option>Male</option>
+			<option>Female</option>
+			</select>
+	<div>
+		Do I need to improve?
+	<div>
+		<label for="y">Yes</label>
+		<input type="checkbox" name="yes" id="yes" value="yes">
+	</div>
+	<div>
+		<label for="no">No</label>
+		<input type="checkbox" name="no" id="no" value="no">
+	</div>
+	<div>
+		Do you statisfy?
+	<div>
+		<label for="y">Yes</label>
+		<input type="radio" name="yes" id="yes" value="yes">
+	</div>
+	<div>
+		<label for="no">No</label>
+		<input type="radio" name="no" id="no" value="no">
+	</div>
+	
+	<button type="reset">Reset</button>
+	<button  type="submit">Submit</button>
+	
+</form>	
+</section>
+</body>
+</html>
